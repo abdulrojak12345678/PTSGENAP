@@ -31,7 +31,7 @@
 <a href="form Tambah Data Pembeli.html">Tambah Data Pembeli</a>
 
 <script type="module">
-  import {ambilDaftarPembeli, alamat} from './main.js';
+  import {ambilDaftarPembeli, } from './main.js';
   
   $(document).ready(async function() {
    let elementdaftar = $("#daftar-pembeli> tbody")
@@ -42,7 +42,7 @@
      elementdaftar.append(
        '<tr>' +
        '<th>' + nomor + '</th>'+
-       '<td>' + data.nama pembeli+'</td>'+
+       '<td>' + data.nama+'</td>'+
        '<td>' +Alamat (data.Alamat)+'</td>'+
        '<td>' + data.No.Tlpn+'</td>'+
        '</tr>'

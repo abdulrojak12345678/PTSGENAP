@@ -39,14 +39,9 @@ export async function ambilDaftarPembeli() {
       notlpn: dok.data().notlpn,
       });
   });
-  
   return hasil;
-}
-export function alamat (x) {
-    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-}
 
-export async function tambahpembeli(namapembeli, Alamat, notlpn) {
+export async function tambahpembeli(namapembeli, Alamat, notlpn){
   try {
     const dokRef = await addDoc(collection(db,'pembeli'),{
    namapembeli: namapembeli,
