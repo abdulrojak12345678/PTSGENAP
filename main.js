@@ -34,17 +34,19 @@ export async function ambilDaftarPembeli() {
   cuplikankuery.forEach((dok) => {
       hasil.push({ 
      id:dok.id, 
-      namapembeli: dok.data().namapembeli,
+      nama: dok.data().nama,
       alamat:dok.data().alamat,
       notlpn: dok.data().notlpn,
       });
   });
   return hasil;
-
-export async function tambahpembeli(namapembeli, Alamat, notlpn){
+  export function formatAngka(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+}
+export async function tambahpembeli(nama, Alamat, notlpn)
   try {
     const dokRef = await addDoc(collection(db,'pembeli'),{
-   namapembeli: namapembeli,
+   nama: nama,
    alamat: alamat,
    notlpn: notlpn
     });
