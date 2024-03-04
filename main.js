@@ -40,10 +40,11 @@ export async function ambilDaftarPembeli() {
       });
   });
   return hasil;
+}
   export function formatAngka(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 }
-export async function tambahpembeli(nama, Alamat, notlpn)
+export async function tambahpembeli(nama, Alamat, notlpn){
   try {
     const dokRef = await addDoc(collection(db,'pembeli'),{
    nama: nama,

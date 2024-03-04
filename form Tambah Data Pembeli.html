@@ -42,7 +42,7 @@
     let elemennotelpon = document.getElementById('input-notlpn');
     
     tombolTamabah.addEventListener('click', async function (e){
-      e.preventDefault();
+      e.preventDefault()
       await tambahpembeli(elemennamapembeli.value, elemenalamat.value, elemennotelpon.value);
       window.location,href = 'index.html';
     });
