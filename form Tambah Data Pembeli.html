@@ -37,13 +37,13 @@
     import { tambahpembeli } from './main.js';
 
     let tombolTamabah = document.getElementById('tombol-tambah');
-    let elemennamapembli = document.getElementById('input-nama');
+    let elemennamapembeli = document.getElementById('input-nama');
     let elemenalamat = document.getElementById('input-alamat');
     let elemennotelpon = document.getElementById('input-notlpn');
     
     tombolTamabah.addEventListener('click', async function (e){
       e.preventDefault()
-      await tambahpembeli(elemennamapembeli.value, elemenalamat.value, elemennotelpon.value);
+      await tambahpembeli(elemennamapembeli.value, elemenalamat.value, elemennotlpn.value);
       window.location,href = 'index.html';
     });
   </script>
