@@ -39,6 +39,26 @@
    let nomor = 1;
    
    daftarpembeli.forEach((data) => {
+        elementdaftar.append(
+          '<li class="list-group-item d-flex justify-content-between">' +
+          '<label>' +
+          data.nama +
+          '</label>' +
+          '<div>' +
+          '<a href="#" class="me-2 link-ubah" data="' +
+          data.id +
+          '">Ubah</a>' +
+          ' <button class="btn btn-danger tombol-hapus" data="' +
+          data.id +
+          '">Hapus</button>' +
+          '</div>' +
+          '</li>'
+        );
+        
+        nomor = + 1;
+      });
+   
+   daftarpembeli.forEach((data) => {
      elementdaftar.append(
        '<tr>' +
        '<th>' + nomor + '</th>'+

@@ -44,7 +44,7 @@ export async function ambilDaftarPembeli() {
   export function formatAngka(x)  { 
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 }
-export async function tambahpembeli(nama, alamat, notlpn){
+export async function tambahpembeli(nama,alamat,notlpn){
   try {
     const dokRef = await addDoc(collection(db,'pembeli'),{
    nama: nama,
