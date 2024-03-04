@@ -34,15 +34,15 @@ export async function ambilDaftarPembeli() {
   cuplikankuery.forEach((dok) => {
       hasil.push({ 
      id:dok.id, 
-      nama: dok.data().namapembeli,
-      harga:dok.data().Alamat,
-      stok: dok.data().notlpn,
+      namapembeli: dok.data().namapembeli,
+      alamat:dok.data().alamat,
+      notlpn: dok.data().notlpn,
       });
   });
   
   return hasil;
 }
-export function formatangka(x) {
+export function alamat (x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 

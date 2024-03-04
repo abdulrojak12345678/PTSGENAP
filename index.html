@@ -18,7 +18,7 @@
   <thead>
     <tr>
       <th scope="col">#</th>
-      <th scope="col">Nama pembeli</th>
+      <th scope="col">nama pembeli</th>
       <th scope="col">Alamat</th>
       <th scope="col">No.Tlpn</th>
     </tr>
@@ -31,14 +31,14 @@
 <a href="form Tambah Data Pembeli.html">Tambah Data Pembeli</a>
 
 <script type="module">
-  import {ambilDaftarPembeli, formatangka} from './main.js';
+  import {ambilDaftarPembeli, alamat} from './main.js';
   
   $(document).ready(async function() {
    let elementdaftar = $("#daftar-pembeli> tbody")
    let daftarpembeli = await ambilDaftarPembeli();
    let nomor = 1;
    
-   daftarproduk.forEach((data) => {
+   daftarpembeli.forEach((data) => {
      elementdaftar.append(
        '<tr>' +
        '<th>' + nomor + '</th>'+
