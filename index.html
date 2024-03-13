@@ -20,7 +20,8 @@
         <th scope="col">#</th>
         <th scope="col">nama pembeli</th>
         <th scope="col">alamat</th>
-        <th scope="col">no.telpon</th>
+        <th scope="col">no.telpon</th> 
+        <th scope="col">tombol</th>
       </tr>
     </thead>
     <tbody>
@@ -54,10 +55,8 @@
           '</div>' +
           '</li>'
         );
-
-        nomor = +1;
       });
-
+        
       daftarpembeli.forEach((data) => {
         elementdaftar.append(
           '<tr>' +
