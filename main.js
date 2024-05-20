@@ -24,7 +24,7 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
-
+//fungsi untuk mengambil data pembeli dan nampilkan 
 export async function ambilDaftarPembeli() {
   const refDokumen = collection(db,"pembeli");
   const kuery = query(refDokumen,orderBy("nama"));
@@ -41,6 +41,7 @@ export async function ambilDaftarPembeli() {
   });
   return hasil;
 }
+  //#################
   export function formatAngka(x)  { 
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 }

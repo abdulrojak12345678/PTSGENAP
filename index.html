@@ -57,18 +57,7 @@
         );
       });
         
-      daftarpembeli.forEach((data) => {
-        elementdaftar.append(
-          '<tr>' +
-          '<th>' + nomor + '</th>' +
-          '<td>' + data.nama + '</td>' +
-          '<td>' + data.alamat + '</td>' +
-          '<td>' + data.notlpn + '</td>' +
-          '</tr>'
-        );
-        nomor = nomor + 1;
-
-      });
+      
       $('#loader').hide();
     });
   </script>
